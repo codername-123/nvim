@@ -35,6 +35,9 @@ return packer.startup({function(use)
 
   -- File Explorer
   use "kyazdani42/nvim-tree.lua"
+
+  -- Treesitter
+  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
   
   if packer_bootstrap then
     require('packer').sync()
