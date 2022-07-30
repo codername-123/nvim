@@ -6,4 +6,6 @@ require("user.nvim-tree")
 require("user.treesitter")
 require("user.cmp")
 require("user.lspkind")
+require("user.autopairs")
+require("user.comment")
 

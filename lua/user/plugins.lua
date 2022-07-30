@@ -38,6 +38,14 @@ return packer.startup({function(use)
 
   -- Treesitter
   use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+  use "windwp/nvim-autopairs"
+  use "windwp/nvim-ts-autotag"
+  use "p00f/nvim-ts-rainbow"
+
+  -- Comments
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use "numToStr/Comment.nvim"
+  use "folke/todo-comments.nvim"
 
   -- Completions
   use "hrsh7th/cmp-nvim-lsp"
@@ -46,10 +54,12 @@ return packer.startup({function(use)
   use "hrsh7th/cmp-cmdline"
   use "hrsh7th/nvim-cmp"
   use "onsails/lspkind-nvim"
+  
   -- Snippets
   use "L3MON4D3/LuaSnip"
   use "saadparwaiz1/cmp_luasnip"
   use "rafamadriz/friendly-snippets"
+ 
 
 
   if packer_bootstrap then

@@ -35,4 +35,19 @@ treesitter.setup {
     enable = true,
     disable = {},
   },
+  autopairs = {
+    enable = true,
+  },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
+  autotag = {
+    enable = true,
+  },
+  rainbow = {
+    enable = true,
+    
+    disable = {"html"},
+  },
 }
