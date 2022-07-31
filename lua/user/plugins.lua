@@ -41,6 +41,7 @@ return packer.startup({function(use)
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
   use "p00f/nvim-ts-rainbow"
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Comments
   use 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -60,6 +61,13 @@ return packer.startup({function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "rafamadriz/friendly-snippets"
  
+  -- Lsp 
+  use "neovim/nvim-lspconfig"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "b0o/SchemaStore.nvim"
+  use "jose-elias-alvarez/null-ls.nvim"
+  use "tami5/lspsaga.nvim"
 
 
   if packer_bootstrap then

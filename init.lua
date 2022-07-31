@@ -8,4 +8,5 @@ require("user.cmp")
 require("user.lspkind")
 require("user.autopairs")
 require("user.comment")
-
+require("user.indentline")
+require("user.lsp")

@@ -1,6 +1,6 @@
 local options = {
 	number = true,
-	numberwidth = 2,
+	numberwidth = 4,
 	tabstop = 2,
 	shiftwidth = 2,
 	backup = false,
@@ -13,10 +13,9 @@ local options = {
 	smartindent = true,
 	swapfile = false,
 	termguicolors = true,
-	timeoutlen = true,
 	undofile = true,
 	updatetime = 100,
-  	timeoutlen = 500,
+  timeoutlen = 500,
 	writebackup = false,
 	expandtab = true,
 	laststatus = 3,
@@ -25,6 +24,6 @@ local options = {
   	--completeopt = {"menuone", "noselect"},	
 }
 
-for k, v in pairs(options) do 
+for k,v in pairs(options) do 
 	vim.o[k] = v
 end
